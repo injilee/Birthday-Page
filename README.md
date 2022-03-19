@@ -1,2 +1,2 @@
-# github.io-Birthday-Page
+# Birthday-Page
 Birthday web page
