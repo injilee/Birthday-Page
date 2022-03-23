@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'ACCchildrenheartOTF-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112-2@1.0/ACCchildrenheartOTF-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    user-select:none;
+}
+body{
+    width:100%;
+    height:100%;
+    font-family:'DM Sans', sans-serif;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* header */
+header{
+    background-color: rgba(182, 202, 241, 0.966)
+}
+.header__container{
+    padding:45px;
+    text-align:center;
+}
+.title__animation span{
+    position: relative;
+    display:inline-block;
+    top: 10px;
+    color: #fff;
+    font-family:'Titan One', cursive;
+    font-size:40px;
+    margin-bottom:15px;
+    animation: jump .3s ease infinite alternate;
+    text-shadow: 0 1px 0 #fed444,
+                0 2px 0 #fed444,
+                0 3px 0 #fed444,
+                0 4px 0 #fed444,
+                0 5px 0 #fed444,
+                0 6px 0 transparent,
+                0 7px 0 transparent,
+                0 8px 0 transparent,
+                0 9px 0 transparent,
+                0 10px 10px rgba(179, 179, 179, 0.4);
+    -webkit-font-smoothing: antialiased;
+}
+.title__animation span:nth-child(1) { 
+    animation-delay:.1s; 
+}
+.title__animation span:nth-child(2) { 
+    animation-delay:.2s; 
+}
+.title__animation span:nth-child(3) { 
+    animation-delay:.3s; 
+}
+.title__animation span:nth-child(4) { 
+    animation-delay:.4s; 
+}
+.title__animation span:nth-child(5) { 
+    animation-delay:.5s; 
+}
+.title__animation span:nth-child(6) { 
+    animation-delay:.6s; 
+}
+.title{
+    color:rgba(243, 234, 237, 0.89);
+    font-family: 'Modak', cursive;
+    font-size:70px;
+    font-weight:400;
+    margin-bottom:25px;
+    text-shadow: 0 1px 0 rgb(248, 94, 197),
+                0 2px 0 rgb(248, 94, 197),
+                0 3px 0 rgb(248, 94, 197),
+                0 4px 0 rgb(248, 94, 197),
+                0 5px 0 rgb(248, 94, 197),
+                0 6px 0 transparent,
+                0 7px 0 transparent,
+                0 8px 0 transparent,
+                0 9px 0 transparent,
+                0 10px 10px rgba(119, 119, 119, 0.4);
+}
+.title a{
+    color: inherit;
+}
+.nav{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    justify-items:center;
+    align-items:center;
+    width:100%;
+    height:auto;
+    padding-bottom:30px;
+}
+.nav ul{
+    display:flex;
+}
+.nav ul li{
+    font-family: 'ACCchildrenheartOTF-Regular';
+    font-size:23px;
+    font-weight: 600;
+    padding:16px;
+    margin-right:76px;
+    cursor:pointer;
+}
+.nav ul li:nth-child(2){
+    text-decoration: underline;
+}
+.nav ul li:nth-child(3){
+    margin-right:0;
+}
+
+/* main */
+main{
+    background-color: #eceaff;
+}
+.main__container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:70px 45px;
+}
+
+
+/* footer */
+.footer__container{
+    display:flex;
+    justify-content:center;
+    padding:13px;
+}
+.copyright{
+    font-size:15px;
+    color:#C5C5C5;
+}
+
+
+
+@keyframes bounce {
+    100% {
+        top:-20px;
+    }
+}
+
+@keyframes jump {
+    100% {
+        top:-10px;
+        text-shadow:0 1px 0 #fed444,
+                    0 2px 0 #fed444,
+                    0 3px 0 #fed444,
+                    0 4px 0 #fed444,
+                    0 5px 0 #fed444,
+                    0 6px 0 #fed444,
+                    0 7px 0 #fed444,
+                    0 8px 0 #fed444,
+                    0 9px 0 #fed444,
+                    0 50px 25px rgba(179, 179, 179, 0.4);
+    }
+}
+
+@media screen and (max-width:786px){
+    /* header */
+    .header__container{
+        padding:28px;
+    }
+    .title__animation span{
+        font-size:28px;
+    }
+    .title{
+        font-size:55px;
+        margin-bottom:0;
+    }
+    
+    /* nav */
+    .nav{
+        padding-bottom:10px;
+    }
+    .nav ul{
+        display:grid;
+        justify-items:center;
+        grid-template-columns:repeat(2, 1fr);
+        column-gap:20px;
+        row-gap:15px;
+    }
+    .nav ul li{
+        font-size:20px;
+        margin-right:0;
+        /* margin-right:25px; */
+    }
+}
