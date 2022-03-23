@@ -15,7 +15,10 @@ body{
     height:100%;
     font-family:'DM Sans', sans-serif;
 }
-
+a{
+    text-decoration:none;
+    color:inherit;
+}
 /* popup */
 .popup{
     z-index:11;
@@ -26,7 +29,7 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-color: #000;
+    background-color: #fff;
     margin:0 auto;
     opacity:1;
 }
@@ -145,19 +148,15 @@ header{
     display:flex;
 }
 .nav ul li{
+    font-family: 'ACCchildrenheartOTF-Regular';
+    font-size:23px;
+    font-weight: 600;
     padding:16px;
     margin-right:76px;
     cursor:pointer;
 }
 .nav ul li:nth-child(3){
     margin-right:0;
-}
-.spring__note{
-    display:block;
-    width:400px;
-    height:70px;
-    background:url('./assets/note-spring1.png') no-repeat;
-    opacity:0.9;
 }
 
 /* main */
@@ -168,23 +167,55 @@ header{
     align-items:center;
     /* background-color: #fbeedc; */
     background-color: #fff;
-    padding:45px;
+    padding:30px 0;
 }
-.main__photo{
+.main__poster{
     position:relative;
     width:768px;
     height:auto;
 }
-
-.photo__item{
+.poster{
     width:100%;
+}
+.imoji{
+    position:absolute;
+    top:80px;
+    left:0;
+}
+.poster__imoji{
+    position:absolute;
+    display:block;
+    width:35px;
+    height:35px;
+    background-image: url(../assets/Partying\ Face.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    cursor:pointer;
+}
+.poster__imoji:hover{
+    transform:scale(1.2);
+}
+.imoji .poster__imoji:nth-child(1){
+    top:5px;
+    left:150px;
+}
+.imoji .poster__imoji:nth-child(2){
+    top:10px;
+    left:310px;
+}
+.imoji .poster__imoji:nth-child(3){
+    top:-5px;
+    left:445px;
 }
 
 /* footer */
 .footer__container{
-
+    display:flex;
+    justify-content:center;
+    padding:13px;
 }
 .copyright{
+    font-size:15px;
     color:#C5C5C5;
 }
 
@@ -211,21 +242,23 @@ header{
                     0 50px 25px rgba(179, 179, 179, 0.4);
     }
 }
-
-@media screen and (max-width:480px){
+@media screen and (max-width:786px){
     /* header */
     .header__container{
-        padding:36px;
+        padding:28px;
     }
     .title__animation span{
-        font-size:30px;
+        font-size:28px;
     }
     .title{
-        font-size:60px;
+        font-size:55px;
         margin-bottom:0;
     }
-
+    
     /* nav */
+    .nav{
+        padding-bottom:10px;
+    }
     .nav ul{
         display:grid;
         justify-items:center;
@@ -234,11 +267,59 @@ header{
         row-gap:15px;
     }
     .nav ul li{
-        font-size:16px;
+        font-size:20px;
         margin-right:0;
         /* margin-right:25px; */
     }
-    .spring__note{
-        width:360px;
+    .main__poster{
+        width:530px;
+    }
+    .imoji{
+        top:45px;
+    }
+    .poster__imoji{
+        width:25px;
+        height:25px;
+    }
+    .imoji .poster__imoji:nth-child(1){
+        top:15px;
+        left:110px;
+    }
+    .imoji .poster__imoji:nth-child(2){
+        top:20px;
+        left:215px;
+    }
+    .imoji .poster__imoji:nth-child(3){
+        top:5px;
+        left:310px;
+    }
+    
+    .copyright{
+        font-size:13px;
+    }
+
+}
+@media screen and (max-width:480px){
+    .main__poster{
+        width:400px;
+    }
+    .imoji{
+        top:25px;
+    }
+    .poster__imoji{
+        width:20px;
+        height:20px;
+    }
+    .imoji .poster__imoji:nth-child(1){
+        top:15px;
+        left:80px;
+    }
+    .imoji .poster__imoji:nth-child(2){
+        top:20px;
+        left:160px;
+    }
+    .imoji .poster__imoji:nth-child(3){
+        top:10px;
+        left:230px;
     }
 }
