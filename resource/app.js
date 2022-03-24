@@ -12,5 +12,5 @@ popUpBtn.addEventListener('click', () => {
 });
 
 imoji.addEventListener('click', ()=> {
-    alert('생일을 축하해줘요! 빰바밤!');
+    alert('생일을 축하해줘요! 빰빠밤!');
 });

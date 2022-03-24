@@ -195,17 +195,41 @@ header{
 .poster__imoji:hover{
     transform:scale(1.2);
 }
-.imoji .poster__imoji:nth-child(1){
+.imoji .poster__imoji.seoyoung{
+    display:none;
+    top:20px;
+    left:50px;
+}
+.imoji .poster__imoji.soyeon{
     top:5px;
     left:150px;
 }
-.imoji .poster__imoji:nth-child(2){
+.imoji .poster__imoji.jisun{
+    top:45px;
+    left:240px;
+}
+.imoji .poster__imoji.bada{
     top:10px;
     left:310px;
 }
-.imoji .poster__imoji:nth-child(3){
+.imoji .poster__imoji.younggyeong{
     top:-5px;
     left:445px;
+}
+.imoji .poster__imoji.eunhye{
+    display:none;
+    top:10px;
+    left:525px;
+}
+.imoji .poster__imoji.jimin{
+    display:none;
+    top:40px;
+    left:600px;
+}
+.imoji .poster__imoji.inji{
+    display:none;
+    top:35px;
+    left:680px;
 }
 
 /* footer */
@@ -281,17 +305,41 @@ header{
         width:25px;
         height:25px;
     }
-    .imoji .poster__imoji:nth-child(1){
-        top:15px;
-        left:110px;
+    .imoji .poster__imoji.seoyoung{
+        display:none;
+        top:20px;
+        left:50px;
     }
-    .imoji .poster__imoji:nth-child(2){
+    .imoji .poster__imoji.soyeon{
+        top:10px;
+        left:105px;
+    }
+    .imoji .poster__imoji.jisun{
+        top:40px;
+        left:165px;
+    }
+    .imoji .poster__imoji.bada{
         top:20px;
         left:215px;
     }
-    .imoji .poster__imoji:nth-child(3){
+    .imoji .poster__imoji.younggyeong{
         top:5px;
         left:310px;
+    }
+    .imoji .poster__imoji.eunhye{
+        display:none;
+        top:10px;
+        left:525px;
+    }
+    .imoji .poster__imoji.jimin{
+        display:none;
+        top:40px;
+        left:600px;
+    }
+    .imoji .poster__imoji.inji{
+        display:none;
+        top:35px;
+        left:680px;
     }
     
     .copyright{
@@ -310,16 +358,40 @@ header{
         width:20px;
         height:20px;
     }
-    .imoji .poster__imoji:nth-child(1){
-        top:15px;
-        left:80px;
-    }
-    .imoji .poster__imoji:nth-child(2){
+    .imoji .poster__imoji.seoyoung{
+        display:none;
         top:20px;
-        left:160px;
+        left:50px;
     }
-    .imoji .poster__imoji:nth-child(3){
+    .imoji .poster__imoji.soyeon{
+        top:15px;
+        left:75px;
+    }
+    .imoji .poster__imoji.jisun{
+        top:35px;
+        left:125px;
+    }
+    .imoji .poster__imoji.bada{
+        top:20px;
+        left:165px;
+    }
+    .imoji .poster__imoji.younggyeong{
         top:10px;
         left:230px;
+    }
+    .imoji .poster__imoji.eunhye{
+        display:none;
+        top:10px;
+        left:525px;
+    }
+    .imoji .poster__imoji.jimin{
+        display:none;
+        top:40px;
+        left:600px;
+    }
+    .imoji .poster__imoji.inji{
+        display:none;
+        top:35px;
+        left:680px;
     }
 }
