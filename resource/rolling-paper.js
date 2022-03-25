@@ -15,25 +15,26 @@ const content = document.querySelector('.content');
 
 let commentList = [];
 
-const COMMENT_KEY = "comment";
+const COMMENT_KEY = "message";
 
 function saveCommentList(){
     localStorage.setItem(COMMENT_KEY, JSON.stringify(commentList));
 }
 
 function addSticker(newCommentObj){
+    // console.log(src + user + message);
     const li = document.createElement('li');
     li.id = newCommentObj.id;
     li.classList.add('sticker');
     ul.appendChild(li);
-    const div = document.createElement('div');
-    div.classList.add('profile');
-    
+
     li.innerHTML = `<div class="profile">
-    <img class="user" src="${src}" alt="">
-    <span class="user__name">${user}</span>
+    <img class="user" src="${newCommentObj.src}" alt="">
+    <span class="user__name">${newCommentObj.user}</span>
     </div>
-    <div class="content">${message}</div>`;
+    <div class="content"><span>${newCommentObj.message}</span></div>`;
+    // console.log(newCommentObj.src);
+    resetInput();
 }
 
 function resetInput(){
@@ -65,18 +66,20 @@ let user = '';
 let message = '';
 
 function getInfo(){
-    message = input.value;
+    let str = document.querySelector('.comments__input').value;
+    str = str.replace(/(?:\r\n|\r|\n)/g, "<br />");
+    message = str;
+    // localStorage.setItem(COMMENT_KEY, message);
+    
     const newCommentObj = {
         message: message,
         user: user,
         src: src,
         id: Date.now()
     };
-    console.log(newCommentObj.id);
     commentList.push(newCommentObj);
     addSticker(newCommentObj);
     saveCommentList();
-    resetInput();
 }
 
 function changeImg(event){
@@ -126,10 +129,6 @@ function changeImg(event){
     }
 }
 
-input.addEventListener('input', () => {
-    message = input.value;
-});
-
 sendBtn.addEventListener('click', () => {
     if(user == ''){
         alert('프로필 선택해주세요 😥');
@@ -147,7 +146,11 @@ toggleBtn.addEventListener('click', () => {
 });
 
 toggleBtn.addEventListener('blur', () => {
-    resetInput();
+    menu.classList.remove('show');
+    userImg.src = './assets/Hearts.png';
+    toggleBtn.textContent = '프로필을 선택해주세요';
+    src = userImg.src;
+    user = '';
 });
 
 menu.addEventListener('click', (evt) => {
@@ -159,5 +162,6 @@ const savedCommentList = localStorage.getItem(COMMENT_KEY);
 if(savedCommentList !== null){
     const parsedComment = JSON.parse(savedCommentList);
     commentList = parsedComment;
-    parsedComment.forEach(getInfo);
+    // console.log(commentList);
+    parsedComment.forEach(addSticker);
 }

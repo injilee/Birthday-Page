@@ -8,7 +8,7 @@
     margin:0;
     padding:0;
     list-style:none;
-    user-select:none;
+    /* user-select:none; */
 }
 body{
     width:100%;
@@ -190,7 +190,7 @@ main{
 }
 .content{
     font-family:'DM Sans', sans-serif;
-    font-size:16px;
+    font-size:15px;
     padding:16px;
 }
 
@@ -301,7 +301,8 @@ main{
     font-size:15px;
     border:none;
     background-color:transparent;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
+    white-space:pre-line;
     resize:none;
     outline:none;
 }
