@@ -398,6 +398,7 @@ main{
         padding-bottom:10px;
     }
     .nav ul{
+        width:340px;
         display:grid;
         justify-items:center;
         grid-template-columns:repeat(2, 1fr);
@@ -416,6 +417,15 @@ main{
     }
 
     /* receiver */
+    .receiver{
+        width:200px;
+        display:grid;
+        justify-items:center;
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .receiver__items{
+        padding:5px;
+    }
     .receiver__items a{
         font-family: 'ACCchildrenheartOTF-Regular';
         font-size:23px;
