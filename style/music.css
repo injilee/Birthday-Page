@@ -98,7 +98,8 @@ header{
     padding-bottom:30px;
 }
 .nav ul{
-    display:flex;
+    display:flex;    
+    text-align:center;
 }
 .nav ul li{
     font-family: 'ACCchildrenheartOTF-Regular';
@@ -115,6 +116,7 @@ header{
     margin-right:0;
 }
 .nav ul li a{
+    display:block;
     padding:16px;
 }
 
