@@ -1,0 +1,9 @@
+@import url(./rolling-paper.css);
+
+/* receiver */
+.receiver__items:nth-child(2){
+    background-size:100%;
+}
+.receiver__items:nth-child(2):hover{
+    background-size:none;
+}
