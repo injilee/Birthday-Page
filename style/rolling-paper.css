@@ -410,6 +410,9 @@ main{
         margin-right:0;
         /* margin-right:25px; */
     }
+    .nav ul li a{
+        padding:16px;
+    }
 
     .main__title{
         font-size:35px;

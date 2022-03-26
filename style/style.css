@@ -158,6 +158,9 @@ header{
 .nav ul li:nth-child(3){
     margin-right:0;
 }
+.nav ul li a{
+    padding:16px;
+}
 
 /* main */
 .main__container{

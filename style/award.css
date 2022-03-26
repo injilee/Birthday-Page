@@ -112,6 +112,9 @@ header{
     text-decoration: underline;
     margin-right:0;
 }
+.nav ul li a{
+    padding:16px;
+}
 
 /* main */
 main{
