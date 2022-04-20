@@ -153,7 +153,6 @@ header{
     font-size:23px;
     font-weight: 600;
     padding:16px;
-    margin-right:76px;
     cursor:pointer;
 }
 .nav ul li:nth-child(3){
@@ -206,18 +205,22 @@ header{
     left:50px;
 }
 .imoji .poster__imoji.soyeon{
+    display:none;
     top:5px;
     left:150px;
 }
 .imoji .poster__imoji.jisun{
+    display:none;
     top:45px;
     left:240px;
 }
 .imoji .poster__imoji.bada{
+    display:none;
     top:10px;
     left:310px;
 }
 .imoji .poster__imoji.younggyeong{
+    display:none;
     top:-5px;
     left:445px;
 }
@@ -227,7 +230,7 @@ header{
     left:525px;
 }
 .imoji .poster__imoji.jimin{
-    display:none;
+    /* display:none; */
     top:40px;
     left:600px;
 }
@@ -316,18 +319,22 @@ header{
         left:50px;
     }
     .imoji .poster__imoji.soyeon{
+        display:none;
         top:10px;
         left:105px;
     }
     .imoji .poster__imoji.jisun{
+        display:none;
         top:40px;
         left:165px;
     }
     .imoji .poster__imoji.bada{
+        display:none;
         top:20px;
         left:215px;
     }
     .imoji .poster__imoji.younggyeong{
+        display:none;
         top:5px;
         left:310px;
     }
@@ -337,9 +344,9 @@ header{
         left:525px;
     }
     .imoji .poster__imoji.jimin{
-        display:none;
+        /* display:none; */
         top:40px;
-        left:600px;
+        left:415px;
     }
     .imoji .poster__imoji.inji{
         display:none;
@@ -369,14 +376,17 @@ header{
         left:50px;
     }
     .imoji .poster__imoji.soyeon{
+        display:none;
         top:15px;
         left:75px;
     }
     .imoji .poster__imoji.jisun{
+        display:none;
         top:35px;
         left:125px;
     }
     .imoji .poster__imoji.bada{
+        display:none;
         top:20px;
         left:165px;
     }
@@ -390,9 +400,8 @@ header{
         left:525px;
     }
     .imoji .poster__imoji.jimin{
-        display:none;
-        top:40px;
-        left:600px;
+        top:35px;
+        left:310px;
     }
     .imoji .poster__imoji.inji{
         display:none;
